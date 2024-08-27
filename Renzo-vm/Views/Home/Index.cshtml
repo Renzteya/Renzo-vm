@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae - Renzo Leonardo Luque Chino</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2D3439;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #3A4148;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #475562;
+            margin-bottom: 30px;
+        }
+
+            header h1 {
+                margin: 0;
+                color: #FFD700;
+                font-size: 2.5em;
+            }
+
+            header p {
+                color: #A7B4C2;
+                font-size: 1.2em;
+            }
+
+        section {
+            margin: 20px 0;
+        }
+
+            section h2 {
+                color: #FFD700;
+                border-bottom: 2px solid #FFD700;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
+        .info {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+            .info strong {
+                color: #FFD700;
+            }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .skill-item {
+            text-align: center;
+            color: #E0E0E0;
+            width: 100px;
+        }
+
+            .skill-item img {
+                width: 60px;
+                height: 60px;
+                display: block;
+                margin: 0 auto 10px;
+                border-radius: 5px;
+            }
+
+        .experience, .education {
+            list-style: none;
+            padding: 0;
+        }
+
+            .experience li, .education li {
+                margin-bottom: 15px;
+                color: #E0E0E0;
+                font-size: 1.1em;
+            }
+
+                .experience li strong, .education li strong {
+                    color: #FFD700;
+                }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            color: #A7B4C2;
+            border-top: 2px solid #475562;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Renzo Leonardo Luque Chino</h1>
+            <p>Estudiante de Programación</p>
+        </header>
+
+        <section>
+            <h2>Contacto</h2>
+            <div class="info">
+                <strong>Email:</strong> renzoluquechino1@gmail.com
+            </div>
+            <div class="info">
+                <strong>Teléfono:</strong> +51 966 311 680
+            </div>
+            <div class="info">
+                <strong>Dirección:</strong> Lima, Perú
+            </div>
+        </section>
+
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>Me apasiona la programación y tengo un fuerte interés en convertirme en un programador Full Stack. Disfruto trabajando en todas las capas del desarrollo de software, desde la lógica del servidor hasta la experiencia del usuario en el frontend. Mi objetivo es seguir aprendiendo y aplicar mis conocimientos en proyectos que me permitan crecer profesionalmente, al tiempo que contribuyo al éxito y la innovación dentro de las organizaciones.</p>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul class="skills">
+                <li class="skill-item">
+                    <img src="@Url.Content("~/img/Logo-html-css.png")" alt="HTML y CSS Logo">
+                    HTML & CSS
+                </li>
+                <li class="skill-item">
+                    <img src="@Url.Content("~/img/Logo-JavaScript.png")" alt="JavaScript Logo">
+                    JavaScript
+                </li>
+                <li class="skill-item">
+                    <img src="@Url.Content("~/img/Logo-Python.png")" alt="Python Logo">
+                    Python
+                </li>
+                <li class="skill-item">
+                    <img src="@Url.Content("~/img/Logo-Java.png")" alt="Java Logo">
+                    Java
+                </li>
+                <li class="skill-item">
+                    <img src="@Url.Content("~/img/Logo-php.png")" alt="PHP Logo">
+                    PHP
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiencia</h2>
+            <ul class="experience">
+                <li>
+                    <strong>Prácticas en Desarrollo Web - Empresa Buho S.A.C</strong> (2024)<br>
+                    Arreglo de errores de pagina web sobre un Compartidor de Archivos con ID unica para que varias personas puedan ver los archivos compartidos y puedan descargarlo:
+                    <a href="https://renzteya.site/Cargador" target="_blank">renzteya.site/Cargador</a>
+                </li>
+                <li>
+                    <strong>Proyecto Personal - Aplicación CRUD</strong> (2024)<br>
+                    Desarrollo de una aplicación CRUD para la gestión un banco, gestion de usuarios, clientes, depositos y retiros.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            <ul class="education">
+                <li><strong>Curso de Programación - SENATI</strong> (2022 - Actualidad)</li>
+                <li><strong>Secundaria Completa - Politecnico Nacional del Callao</strong> (15/03/2017 - 15/12/2021)</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Renzo Leonardo Luque Chino - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
